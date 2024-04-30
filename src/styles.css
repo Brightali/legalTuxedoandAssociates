@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+.intake {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  color: #2d2d2d;
+  height: 40px;
+  width: 90%;
+  max-width: 600px;
+  margin-block: 10px;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+.submit-btn {
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+
+  max-width: 250px;
+  margin-block: 10px;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+
+.visual {
+  border: 2px solid red;
+}
+
+@keyframes closeMobileNav {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: translatex(100%);
+  }
+}
+
+@keyframes openMobileNav {
+  0% {
+    transform: translatex(100%);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.openMobileNav {
+  animation: openMobileNav 0.5s forwards;
+}
+
+.closeMobileNav {
+  animation: closeMobileNav 0.5s forwards;
+}
